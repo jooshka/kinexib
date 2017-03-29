@@ -152,16 +152,24 @@ export const store = new Vuex.Store({
         }
       });
 
-      $('.map-pin').tooltip({
-        placement: 'right',
-        animation: false,
+      function set_handlers() {
+        $('.map-pin').tooltip({
+          placement: 'right',
+          animation: false,
+        });
+
+        $('.js-city').on('click', function () {
+          let city_id = Number(this.getAttribute('data-value'));
+          dispatch('set_active_city', [city_id, 'id']);
+        });
+      };
+
+      set_handlers();
+
+      $(window).resize( () => {
+        set_handlers();
       });
 
-      let self = this;
-      $('.js-city').on('click', function () {
-        let city_id = Number(this.getAttribute('data-value'));
-        dispatch('set_active_city', [city_id, 'id']);
-      });
     },
 
     fetch_shops ({commit, state, dispatch}) {
