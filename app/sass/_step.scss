@@ -1,0 +1,95 @@
+.step-header {
+  border-bottom: 1px solid $gray-light;
+  margin-bottom: 1.2rem;
+
+}
+.step-user {
+  position: relative;
+}
+.step-user__title {
+  @extend .fz20;
+  margin-bottom: 1rem;
+}
+.step-user__data {
+  @extend .fz14;
+  margin-bottom: .75rem;
+}
+.ship-item {
+  padding: .75rem 1rem;
+  margin: .4rem 0;
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  .custom-control-description {
+    font-size: calculateRem(20px);
+    color: $body-color;
+  }
+}
+.pay-item {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+  .pay-item__img {
+    display: block;
+    filter: gray; /* IE 6-9 */
+    filter: grayscale(100%);
+  }
+  input {
+    display: none;
+    &:checked {
+      ~ .pay-item__img {
+        filter: none;
+      }
+      ~ .pay-item__txt {
+        color: $blue-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.step-info {
+  color: $gray-light;
+  @extend .fz14;
+  position: relative;
+  z-index: 9;
+  line-height: 1.3;
+}
+.step-send {
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: $grid-lg-up) {
+  .step-user_filling {
+    &::before {
+      content: "ИЛИ";
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $gray-light;
+      bottom: 10px;
+      width: 1px;
+      position: absolute;
+      right: 34%;
+      top: 10px;
+      background-color: $gray-light;
+    }
+  }
+  .step-send {
+    transform: translateY(-100%);
+    position: relative;
+    z-index: 10;
+  }
+}
+@media (max-width: $grid-md-down) {
+  .ship-box {
+    margin: .5rem 0;
+    float: right;
+  }
+  .ship-item {
+    .form-control {
+      margin: .75rem 0;
+    }
+  }
+}

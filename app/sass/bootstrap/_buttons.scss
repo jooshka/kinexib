@@ -1,0 +1,133 @@
+// scss-lint:disable QualifyingElement
+
+//
+// Base styles
+//
+
+.btn {
+  @extend .play;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  font-size: calculateRem(20px);
+  padding: $btn-padding-y $btn-padding-x $btn-padding-y + .15rem;
+  border: 0;
+  @include transition($btn-transition);
+
+  &,
+  &.active {
+    &:focus {
+      @include tab-focus();
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+  }
+  @media (min-width: $grid-sm-up) {
+    font-size: calculateRem(22px);
+  }
+}
+
+
+//
+// Alternate buttons
+//
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg);
+}
+.btn-secondary {
+  @include button-variant($white, $gray-light);
+}
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg);
+}
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg);
+}
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg);
+}
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg);
+}
+
+// Remove all backgrounds
+.btn-outline-primary {
+  @include button-outline-variant($btn-primary-bg);
+}
+.btn-outline-secondary {
+  @include button-outline-variant($btn-secondary-border);
+}
+.btn-outline-info {
+  @include button-outline-variant($btn-info-bg);
+}
+.btn-outline-success {
+  @include button-outline-variant($btn-success-bg);
+}
+.btn-outline-warning {
+  @include button-outline-variant($btn-warning-bg);
+}
+.btn-outline-danger {
+  @include button-outline-variant($btn-danger-bg);
+}
+
+.form-btn {
+  @extend .play;
+  line-height: 1;
+  background-color: transparent;
+  font-size: calculateRem(24px);
+  color: $blue;
+  &:hover {
+    color: $pink;
+  }
+  .fa {
+    margin-left: 2px;
+    vertical-align: -2px;
+  }
+}
+//
+// Button Sizes
+//
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm);
+}
+
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

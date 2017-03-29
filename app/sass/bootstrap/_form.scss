@@ -1,0 +1,266 @@
+// scss-lint:disable QualifyingElement
+
+//
+// Textual form controls
+//
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  // // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  // height: $input-height;
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+  color: $body-color;
+  background-color: $input-bg;
+  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
+  background-image: none;
+  background-clip: padding-box;
+  border: $input-btn-border-width solid $gray-light;
+
+  @include tab-focus();
+  //@include box-shadow($input-box-shadow);
+  @include transition($input-transition);
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  // Placeholder
+  &::placeholder {
+    color: $input-color-placeholder;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled,
+  &[readonly] {
+    background-color: $input-bg-disabled;
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+  }
+
+  &:disabled {
+    cursor: $cursor-disabled;
+  }
+}
+.form-control-lg {
+  padding: $input-padding-y-lg $input-padding-x-lg;
+}
+.box-control {
+  border-bottom: 1px solid $gray-light;
+  position: relative;
+  &::before,&::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+  }
+  &::before {
+    border-left: 1px solid $gray-light;
+    left: 0;
+  }
+  &::after {
+    border-right: 1px solid $gray-light;
+    right: 0;
+  }
+  .form-control {
+    border: 0;
+    padding: $input-padding-y $input-padding-x;
+  }
+  .custom-select {
+    text-decoration: none;
+    width: 100%;
+  }
+}
+.form-group {
+  margin-bottom: 20px;
+}
+select.form-control {
+  &:not([size]):not([multiple]) {
+    $select-border-width: ($border-width * 2);
+    height: calc(#{$input-height} + #{$select-border-width});
+  }
+
+  &:focus::-ms-value {
+    // Suppress the nested default white text on blue background highlight given to
+    // the selected option text when the (still closed) <select> receives focus
+    // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
+    // match the appearance of the native widget.
+    // See https://github.com/twbs/bootstrap/issues/19398.
+    color: $input-color;
+    background-color: $input-bg;
+  }
+}
+textarea.form-control {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.custom-select {
+  display: inline-block;
+  max-width: 100%;
+  padding: .25rem 1.5rem .25rem .75rem;
+  vertical-align: middle;
+  background: url('../images/down.png') 97% center no-repeat;
+  //background-size: $custom-select-bg-size;
+  //background: none;
+  color: $blue-dark;
+  font-size: inherit;
+  line-height: $input-line-height;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  // Use vendor prefixes as `appearance` isn't part of the CSS spec.
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  &::after {
+    content: "df";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:focus {
+    border-color: $custom-select-focus-border-color;
+    outline: none;
+
+    &::-ms-value {
+      // For visual consistency with other platforms/browsers,
+      // supress the default white text on blue background highlight given to
+      // the selected option text when the (still closed) <select> receives focus
+      // in IE and (under certain conditions) Edge.
+      // See https://github.com/twbs/bootstrap/issues/19398.
+      color: $input-color;
+      background-color: $input-bg;
+    }
+  }
+
+  &:disabled {
+    color: $custom-select-disabled-color;
+    cursor: $cursor-disabled;
+    background-color: $custom-select-disabled-bg;
+  }
+
+  // Hides the default caret in IE11
+  &::-ms-expand {
+    opacity: 0;
+  }
+}
+.custom-control-description {
+  color: $gray-light;
+  font-size: calculateRem(14px);
+  line-height: 1.25;
+  display: inline-block;
+  vertical-align: sub;
+}
+.custom-control {
+  position: relative;
+  display: inline-block;
+  min-height: (1rem * $line-height-base);
+  padding-left: $custom-control-gutter;
+  margin-right: $custom-control-spacer-x;
+  line-height: 1;
+  cursor: pointer;
+  .custom-control-input:checked ~ .custom-control-description {
+    color: $body-color;
+  }
+}
+.custom-control-indicator {
+  position: absolute;
+top: 50%;
+    transform: translateY(-50%);
+  left: 0;
+  display: block;
+  width: $custom-control-indicator-size;
+  height: $custom-control-indicator-size;
+  pointer-events: none;
+  user-select: none;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $custom-control-indicator-bg-size;
+  border: 1px solid $gray-light;
+}
+
+.custom-radio {
+  .custom-control-indicator {
+    border-radius: $custom-radio-radius;
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: $custom-radio-checked-icon;
+  }
+}
+.custom-control-input {
+  position: absolute;
+  z-index: -1; // Put the input behind the label so it doesn't overlay text
+  opacity: 0;
+
+  &:checked ~ .custom-control-indicator {
+    color: $custom-control-checked-indicator-color;
+    border-color: #000;
+    //background-color: $custom-control-checked-indicator-bg;
+    //@include box-shadow($custom-control-checked-indicator-box-shadow);
+  }
+
+  &:disabled {
+    ~ .custom-control-indicator {
+      cursor: $custom-control-disabled-cursor;
+      background-color: $custom-control-disabled-indicator-bg;
+    }
+
+    ~ .custom-control-description {
+      color: $custom-control-disabled-description-color;
+      cursor: $custom-control-disabled-cursor;
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-indicator {}
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    &::before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 19px;
+      height: 8px;
+      content: '';
+      transform: rotate(-60deg) skew(-20deg);
+      border-bottom: 3px solid $pink;
+      border-left: 3px solid $pink;
+    }
+  }
+
+  .custom-control-input:indeterminate ~ .custom-control-indicator {
+    background-color: $custom-checkbox-indeterminate-bg;
+    background-image: $custom-checkbox-indeterminate-icon;
+    @include box-shadow($custom-checkbox-indeterminate-box-shadow);
+  }
+}
+
+// Radios
+//
+// Tweak just a few things for radios.
+
+.custom-radio {
+  .custom-control-indicator {
+    border-radius: $custom-radio-radius;
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: $custom-radio-checked-icon;
+  }
+}
+

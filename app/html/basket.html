@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Корзина</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div  id="header">
+      //= layout/header.html
+    </div>
+    <div class="header-panel">
+      <div class="container">
+        <div class="row flex-items-between">
+          <div class="col-auto col">
+            <h1 class="header-panel__title">Корзина: <a href="#!" class="fz24 text-primary pl-15"><i class="fa fa-refresh"></i></a></h1>
+          </div>
+          <div class="col-auto col mb-20">
+            <a href="#!" class="fz24 play">Оформить заказ</a>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- header-panel -->
+  </header>
+  <main id="main">
+    <div class="container mb-100">
+      <div class="basket-headers row hidden-md-down">
+        <div class="col-lg-9">
+          Фотография<span class="basket-sep">/</span>Товар<span class="basket-sep">/</span>Артикул<span class="basket-sep">/</span>Цвет
+        </div>
+        <div class="col-lg-2 text-center">Стоимость</div>
+        <div class="col-lg-2 text-center">Количество</div>
+        <div class="col-lg-2 text-center">Сумма</div>
+        <div class="col-lg-1"></div>
+      </div>
+      <!-- basket-headers -->
+      <div class="basket-item row">
+        <div class="basket-media col-sm-3 col-md-2 col-lg-1">
+          <img src="images/products/item-1.png" alt="">
+        </div>
+        <!-- basket-media -->
+        <div class="basket-content text-center text-sm-left col-sm-8 col-md-8">
+          <div class="basket-title">Тейп сверхэластичный</div>
+          <div class="text-light">СТ-545563</div>
+          Бежевый
+        </div>
+        <!-- basket-content -->
+        <div class="basket-price col-md-4 col-lg-2 hidden-md-down">13 000 р.</div>
+        <div class="basket-count col-md-2 hidden-sm-down">2 шт.</div>
+        <div class="basket-total col-sm-3 col-lg-2"><strong>36 000 р.</strong></div>
+        <div class="col-sm-1 col-md-1 text-center text-sm-right"><a href="#!" class="basket-item__del">&times;</a></div>
+      </div>
+      <!-- basket-item -->
+      <div class="basket-item row">
+        <div class="basket-media col-sm-3 col-md-2 col-lg-1">
+          <img src="images/products/item-1.png" alt="">
+        </div>
+        <!-- basket-media -->
+        <div class="basket-content text-center text-sm-left col-sm-8 col-md-8">
+          <div class="basket-title">Тейп сверхэластичный</div>
+          <div class="text-light">СТ-545563</div>
+          Бежевый
+        </div>
+        <!-- basket-content -->
+        <div class="basket-price col-md-4 col-lg-2 hidden-md-down">13 000 р.</div>
+        <div class="basket-count col-md-2 hidden-sm-down">2 шт.</div>
+        <div class="basket-total col-sm-3 col-lg-2"><strong>36 000 р.</strong></div>
+        <div class="col-sm-1 col-md-1 text-center text-sm-right"><a href="#!" class="basket-item__del">&times;</a></div>
+      </div>
+      <!-- basket-item -->
+      <div class="basket-item row">
+        <div class="basket-media col-sm-3 col-md-2 col-lg-1">
+          <img src="images/products/item-1.png" alt="">
+        </div>
+        <!-- basket-media -->
+        <div class="basket-content text-center text-sm-left col-sm-8 col-md-8">
+          <div class="basket-title">Тейп сверхэластичный</div>
+          <div class="text-light">СТ-545563</div>
+          Бежевый
+        </div>
+        <!-- basket-content -->
+        <div class="basket-price col-md-4 col-lg-2 hidden-md-down">13 000 р.</div>
+        <div class="basket-count col-md-2 hidden-sm-down">2 шт.</div>
+        <div class="basket-total col-sm-3 col-lg-2"><strong>36 000 р.</strong></div>
+        <div class="col-sm-1 col-md-1 text-center text-sm-right"><a href="#!" class="basket-item__del">&times;</a></div>
+      </div>
+      <!-- basket-item -->
+      <div class="basket-footer row">
+        <div class="col-sm-8 col-md-6 col-lg-4 mb-20">
+          <div class="row"><button class="btn btn-primary btn-block">Оформить заказ</button></div>
+        </div>
+        <div class="col-sm-7 col-md-9 col-lg-11">
+          <div class="row flex-items-right text-light no-gutters">
+            <div class="col-8 col-md-11 col-lg-13 text-right">Итого:</div>
+            <div class="col-8 col-md-5 col-lg-3 text-right">12 995 р.</div>
+          </div>
+          <div class="row flex-items-right text-light no-gutters">
+            <div class="col-8 col-md-11 col-lg-13 text-right">Доставка:</div>
+            <div class="col-8 col-md-5 col-lg-3 text-right">500 р. <a data-toggle="modal" class="fz24" href="#calculate"><i class="fa fa-calculator" aria-hidden="true"></i></a></div>
+          </div>
+          <div class="row flex-items-right no-gutters">
+            <div class="col-8 col-md-11 col-lg-13 text-right"><strong>К оплате:</strong></div>
+            <div class="col-8 col-md-5 col-lg-3 text-right"><strong>13 495 р.</strong></div>
+          </div>
+        </div>
+      </div>
+      <!-- basket-footer -->
+    </div>
+    <!-- container -->
+  </main>
+  <!--main-->
+  <footer id="footer">
+    //= layout/footer.html
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="calculate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Уточнение стоимости доставки</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-10 row">
+            <label class="col-sm-7">выберите страну:</label>
+            <div class="col-sm-9">
+              <select class="custom-select">
+                <option>Россия</option>
+                <option>Россия</option>
+                <option>Россия</option>
+                <option>Россия</option>
+                <option>Россия</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-10 row flex-items-middle">
+            <label class="col-sm-7">укажите индекс:</label>
+            <div class="col-sm-4">
+              <div class="box-control">
+                <input class="form-control" type="text" placeholder="011633" />
+              </div>
+            </div>
+          </div>
+          <div class="row flex-items-middle">
+            <label class="col-sm-7">стоимость доставки:</label>
+            <div class="col-sm-9"><span class="basket-price-ship"><strong>500</strong> руб.</span></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-sm-7 mb-10"><button type="button" class="btn btn-primary btn-block">Посчитать</button></div>
+            <div class="col-sm-7 mb-10"><button type="button" class="btn btn-primary btn-block">Применить</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+  <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

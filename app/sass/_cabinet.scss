@@ -1,0 +1,90 @@
+.head-link-txt {
+  @extend .fz24,.play;
+  vertical-align: middle;
+  position: relative;
+  line-height: 1.2;
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+.head-link {
+  color: $blue;
+  &.active {
+    color: $pink;
+    .head-link-txt {
+      border-bottom: 0;
+      &::before,&::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: calc(50% - 30px);
+        border-bottom: 1px solid;
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}
+.header-panel {
+  a {
+    text-decoration: none;
+  }
+}
+.header-arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  height: 0;
+  width: 60px;
+  bottom: 0;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    background: $pink;
+  }
+  &::before {
+    left: 0;
+    transform: skew(0deg, 25deg);
+    transform-origin: 0 0;
+  }
+  &::after {
+    right: 0;
+    transform: skew(0deg, -25deg);
+    transform-origin: 100% 0;
+  }
+}
+.cabinet-title {
+  @extend .fz20;
+  color: $gray-light;
+  border-bottom: 1px solid $gray-light;
+  padding: 0 0 1rem;
+  margin: 0 0 1rem;
+}
+.sortable-block {
+  @extend .play,.fz24;
+  a {
+    text-decoration: none;
+  }
+}
+.order-item {
+  @extend .anim;
+  display: block;
+  color: $body-color;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid $gray-light;
+  &:hover {
+    color: $body-color;
+    background-color: #e8e8e8;
+  }
+}
+.order-total {
+  padding: 12px 0;
+}

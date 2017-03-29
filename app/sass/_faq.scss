@@ -1,0 +1,68 @@
+.box-sort {
+  @extend .fz24;
+  a {
+    text-decoration: none;
+  }
+}
+.icon-faq {
+  @include sprite($faq);
+  float: left;
+  margin-left: -2.5rem;
+  //margin-right: 1.5rem;
+}
+.card-header {
+  padding: .75rem 0 .75rem 4.5rem;
+  line-height: 1.3;
+  &:hover {
+    background-color: $btn-primary-bg;
+    a {
+      color: $white;
+    }
+    .icon-faq {
+      @include sprite-position($faq-hover);
+    }
+  }
+  @extend .fz20;
+  a {
+    text-decoration: none;
+    color: $body-color;
+  }
+}
+.card-block {
+  padding: 1rem 1rem 1rem 4.5rem;
+}
+.collapse-faq {
+  margin-bottom: 1rem;
+  &.active {
+    .card-block {
+      background-color: #e8e8e8;
+    }
+    .card-header {
+      background-color: #e8e8e8;
+      margin-bottom: 1px;
+      a {
+        color: $red;
+      }
+      .icon-faq {
+        @include sprite-position($faq-active);
+      }
+    }
+  }
+}
+.card-author {
+  margin-bottom: .75rem;
+}
+.card-text {
+  overflow: hidden;
+  @extend .fz14;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+.card-author__sep {
+  padding: 0 .2rem;
+}
+@media (min-width: $grid-sm-up) {
+  .card-author {
+    float: left;
+  }
+}

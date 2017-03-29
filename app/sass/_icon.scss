@@ -1,0 +1,67 @@
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-panel-vk {
+  @include sprite($panel-vk);
+}
+.icon-panel-fb {
+  @include sprite($panel-fb);
+}
+.icon-video {
+  @include sprite($video);
+}
+.icon-x {
+  @include sprite($x);
+}
+.icon-cart {
+  @include sprite($cart);
+}
+.icon-question {
+  @include sprite($question);
+}
+.rating_arrow {
+  @include sprite($rating_arrow);
+}
+.rating_arrow_hover {
+  @include sprite($rating_arrow_hover);
+}
+.icon-reset {
+  @include sprite($reset);
+}
+.icon-site {
+  @include sprite($site);
+}
+.icon-marker{
+  @include sprite($marker);
+}
+.icon-phone{
+  @include sprite($phone);
+}
+.icon-mail{
+  @include sprite($mail);
+}
+.icon-info{
+  @include sprite($info);
+}
+.icon-list{
+  @include sprite($list);
+}
+.icon-map{
+  @include sprite($map);
+  cursor: pointer;
+  &:hover {
+    @include sprite-position($map-hover);
+  }
+}
+.head-link {
+  &:hover,&.active {
+    .icon-info {
+      @include sprite-position($info-hover);
+    }
+    .icon-list{
+      @include sprite-position($list-hover);
+    }
+  }
+}

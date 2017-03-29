@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <header class="position" id="header">
+    <div class="container">
+      <div class="row flex-items-between">
+        <div class="col-auto col-sm-14 col-md-5 col-lg-4">
+          <a href="#!" class="logo"><span><img src="images/logo.png" alt=""></span></a>
+        </div>
+        <nav class="navbar col-auto col-sm-2 col-md-3 col-lg-8 col-xl-9">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar">
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Информация для клиентов</span></a>
+                <i class="nav-click fa fa-plus hidden-lg-up"></i>
+                <div class="nav-box">
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Что такое Кинезио-Тейп</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Инструкция</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">FAQ</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Доставка и Оплата</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">ДЦП</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">О компании</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Меценатство</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Онлайн каталог</span></a>
+                <i class="nav-click fa fa-plus hidden-lg-up"></i>
+                <div class="nav-box">
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Тейпы для всех</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Для экстремальных нагрузок</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Метровые тейпы PRO</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Сверх эластичный тейп</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Спортивный тейп</a></li>
+                    <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Компресс</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Адреса магазинов</span></a>
+                <i class="nav-click fa fa-plus hidden-lg-up"></i>
+                <div class="nav-box">
+                  <div class="nav-bg"><input type="text" class="nav-fild" placeholder="Поиск по городам" /></div>
+                  <div class="nav-scroll">
+                    <div class="scrollbar">
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Москва</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Санкт-Петербург</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Новосибирск</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Красноярск</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Екатеринбург</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Чехорда</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Вашингтон</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Мадрид</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Москва</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Санкт-Петербург</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Новосибирск</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Красноярск</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Екатеринбург</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Чехорда</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Вашингтон</a></li>
+                        <li class="nav-sub__item"><a class="nav-sub__link" href="#!">Мадрид</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Личный кабинет</span></a>
+                <i class="nav-click fa fa-plus hidden-lg-up"></i>
+                <div class="nav-box">
+                  <div class="nav-sub nav-sub_enter">
+                    <div class="mb-10"><input type="email" class="nav-fild" placeholder="E-mail" /></div>
+                    <div class="mb-10"><input type="text" class="nav-fild" placeholder="Пароль" /></div>
+                    <div class="row text-center">
+                      <div class="col-sm-7"><a href="#!" class="fz20">Войти</a></div>
+                      <div class="col-sm-9"><a href="#!" class="nav-forgot">Забыли пароль?</a></div>
+                    </div>
+                    <hr class="nav-line" />
+                    <div class="text-center"><a href="#!" class="fz20">Зарегистрироваться</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navbar -->
+        <div class="col-md-8 col-lg-4 col-xl-3 text-md-right">
+          <div class="phone-item">8 800 555-16-17</div>
+          <div class="panel-soc">
+            <a href="#!"><i class="icon icon-panel-vk"></i></a>
+            <a href="#!"><i class="icon icon-panel-fb"></i></a>
+          </div>
+          <div class="panel-link">
+            <span class="panel-lang active">rus</span>
+            -
+            <a href="#!" class="panel-lang">eng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="owl-carousel main-slider">
+      <div class="item">
+        <!-- div class="box-blur hidden-xs-down"><div class="container"><img class="blur" src="images/slide-2.jpg" alt=""></div></div> -->
+        <div class="container"><img src="images/slide-2.jpg" alt=""></div>
+        <div class="item-content">
+          <div class="container h-100">
+            <div class="row flex-items-middle h-100">
+              <div class="col-md-16 col-lg-8">
+                <div class="item-bg">
+                  <span class="text-white">Кинезиотейп</span> - эластичный пластырь, применяется для профилактики и&nbsp;естественного ускорения процесса восстановления и&nbsp;реабилитации при травмах суставов, мышц, связок и&nbsp;ушибах магких тканей. По&nbsp;свойствам напоминает экзоскелет.
+                  <p class="mt-10"><a href="#!" class="item-more">Читать подробнее</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container"><img src="images/slide-2.jpg" alt=""></div>
+        <div class="item-content">
+          <div class="container h-100">
+            <div class="row flex-items-middle h-100">
+              <div class="col-md-16 col-lg-8">
+                <div class="item-bg">
+                  <span class="text-white">Кинезиотейп</span> - эластичный пластырь, применяется для профилактики и&nbsp;естественного ускорения процесса восстановления и&nbsp;реабилитации при травмах суставов, мышц, связок и&nbsp;ушибах магких тканей. По&nbsp;свойствам напоминает экзоскелет.
+                  <p class="mt-10"><a href="#!" class="item-more">Читать подробнее</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container"><img src="images/slide-2.jpg" alt=""></div>
+        <div class="item-content">
+          <div class="container h-100">
+            <div class="row flex-items-middle h-100">
+              <div class="col-md-16 col-lg-8">
+                <div class="item-bg">
+                  <span class="text-white">Кинезиотейп</span> - эластичный пластырь, применяется для профилактики и&nbsp;естественного ускорения процесса восстановления и&nbsp;реабилитации при травмах суставов, мышц, связок и&nbsp;ушибах магких тканей. По&nbsp;свойствам напоминает экзоскелет.
+                  <p class="mt-10"><a href="#!" class="item-more">Читать подробнее</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container"><img src="images/slide-2.jpg" alt=""></div>
+        <div class="item-content">
+          <div class="container h-100">
+            <div class="row flex-items-middle h-100">
+              <div class="col-md-16 col-lg-8">
+                <div class="item-bg">
+                  <span class="text-white">Кинезиотейп</span> - эластичный пластырь, применяется для профилактики и&nbsp;естественного ускорения процесса восстановления и&nbsp;реабилитации при травмах суставов, мышц, связок и&nbsp;ушибах магких тканей. По&nbsp;свойствам напоминает экзоскелет.
+                  <p class="mt-10"><a href="#!" class="item-more">Читать подробнее</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-slider -->
+    <div class="owl-navs">
+      <div class="container">
+        <div id="owl-dot"></div>
+        <div id="owl-nav"></div>
+      </div>
+    </div>
+    <!-- owl-navs -->
+    <div class="branded-products">
+      <div class="container">
+        <div class="branded-products__title">фирменная продукция</div>
+        <div class="branded-products__box">
+          <div class="scrollbar">
+            <div class="branded-products__list">
+              <a tabindex="0" rel="popover" data-trigger="hover" data-placement="bottom" data-popover-content="#drop-1" href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+                <div class="branded-products__drop" id="drop-1">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="branded-products__item-info">длина * ширина:</div>
+                      <div class="branded-products__item-info">цвета:</div>
+                      <div class="branded-products__item-info">материал: </div>
+                      <div class="branded-products__item-info">эластичность:</div>
+                      <div class="branded-products__item-info">водостойкость:</div>
+                      <div class="branded-products__item-info">фиксация: </div>
+                      <div class="branded-products__item-info">прочность: </div>
+                      <div class="branded-products__item-info">износостойкость:</div>
+                      <div class="branded-products__item-info">лимфодринаж: </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="branded-products__item-info">5 м * 5 см</div>
+                      <div class="branded-products__item-info">
+                        <span class="branded-products__color bg-black"></span>
+                        <span class="branded-products__color bg-blue"></span>
+                        <span class="branded-products__color bg-pink"></span>
+                        <span class="branded-products__color bg-orange"></span>
+                        <span class="branded-products__color bg-green"></span>
+                        <span class="branded-products__color bg-white"></span>
+                      </div>
+                      <div class="branded-products__item-info">Супер нейлон</div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- branded-products__drop -->
+              </a>
+              <!-- branded-products__item -->
+              <a tabindex="0" rel="popover" data-trigger="hover" data-placement="bottom" data-popover-content="#drop-2" href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+                <div id="drop-2" class="branded-products__drop">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="branded-products__item-info">длина * ширина:</div>
+                      <div class="branded-products__item-info">цвета:</div>
+                      <div class="branded-products__item-info">материал: </div>
+                      <div class="branded-products__item-info">эластичность:</div>
+                      <div class="branded-products__item-info">водостойкость:</div>
+                      <div class="branded-products__item-info">фиксация: </div>
+                      <div class="branded-products__item-info">прочность: </div>
+                      <div class="branded-products__item-info">износостойкость:</div>
+                      <div class="branded-products__item-info">лимфодринаж: </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="branded-products__item-info">5 м * 5 см</div>
+                      <div class="branded-products__item-info">
+                        <span class="branded-products__color bg-black"></span>
+                        <span class="branded-products__color bg-blue"></span>
+                        <span class="branded-products__color bg-pink"></span>
+                        <span class="branded-products__color bg-orange"></span>
+                        <span class="branded-products__color bg-green"></span>
+                        <span class="branded-products__color bg-white"></span>
+                      </div>
+                      <div class="branded-products__item-info">Супер нейлон</div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="branded-products__item-info">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                        <i class="fa fa-star empty" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- branded-products__drop -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+              <a href="#!" class="branded-products__item">
+                <figure class="branded-products__img">
+                  <img src="images/products/item-1.png" alt=""  />
+                </figure>
+                <div class="branded-products__caption">Тейпы для экстримальных нагрузок</div>
+                <div class="branded-products__price">700 руб.</div>
+                <!-- branded-products collapse -->
+              </a>
+              <!-- branded-products__item -->
+            </div>
+            <!-- branded-products__list -->
+          </div>
+          <!-- scrollbar -->
+        </div>
+        <!-- branded-products__box -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- branded-products -->
+    <section class="container">
+      <div class="row">
+        <article class="col-md-16 col-lg-11 content mb-50">
+          <h2 class="content-title text-red">
+            <i class="hidden-xs-down icon icon-video"></i>
+            Видео инструкции по применению
+          </h2>
+          <p>Ушибы, растяжения, надрывы, воспаления мышц и сухожилий, вывихи, подвывихи, артрозы и воспаления суставов, синдром Дюплея, адгезивный капсулит («застывшее» плечо), «теннисный» локоть, грыжи позвоночника, протрузии, колиты, остеохондрозы, стенокардия, бронхит, астма (в сочетании с комплексным лечением), боли в мышцах и суставах, гематомы. Рекомендуется использовать при комплексном лечении заболеваний суставов. Начало и конец тейпа должны быть длиной 3–5 см и никогда не натягиваются, независимо от места и способа наложения тейпа. Тейп наклеивается за 30 мин. до начала нагрузок. Кожа должна быть чистой и сухой. При сильном волосяном покрове в месте наклеивания нужно удалить волосы...</p>
+          <a class="blue-dark pull-left" href="#!">Читать подробнее</a>
+        </article>
+        <!-- col -->
+        <aside class="col-md-16 col-lg-5 mb-50">
+          <a href="#!" class="link-icon">
+            <span class="link-icon__figure"><i class="icon icon-x"></i></span>
+            <span class="link-icon__txt">Что такое<br />Кинезио-тейпы?</span>
+          </a>
+          <a href="#!" class="link-icon">
+            <span class="link-icon__figure"><i class="icon icon-cart"></i></span>
+            <span class="link-icon__txt">Доставка и Оплата заказов</span>
+          </a>
+          <a href="#!" class="link-icon">
+            <span class="link-icon__figure"><i class="icon icon-question"></i></span>
+            <span class="link-icon__txt">Вопросы и ответы FAQ</span>
+          </a>
+        </aside>
+      </div>
+      <!-- row -->
+    </section>
+    <!-- container -->
+    <section class="section-bg">
+      <div class="form-questions">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-8">
+              <h2>У вас остались вопросы?</h2>
+              <div class="form-des">Оставьте ваши контакты и мы свяжемся с вами в ближайшее время.</div>
+              <form class="row">
+                <div class="form-group col-md-8">
+                  <input type="text" placeholder="Представтесь" class="form-control">
+                </div>
+                <div class="form-group col-md-8">
+                  <input name="phone" type="text" placeholder="Номер телефона" class="form-control">
+                </div>
+                <div class="col-md-16">
+                  <textarea class="form-control" placeholder="Тексе вопроса (не обязательно)" rows="5"></textarea>
+                </div>
+                <div class="mt-10 col-md-16">
+                  <button class="btn form-btn">Отправить <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                </div>
+              </form>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- form-questions -->
+      <div class="tabs-content">
+        <div class="container">
+          <div class="tabs-content__title row">
+            <div class="col-lg-3 col-xl-4 text-nowrap">
+              <img class="hidden-md-down" src="images/logo-lg.png" alt=""> <span class="separator hidden-md-down">-</span>
+            </div>
+            <div class="col-lg-13 col-xl-12"><h2>это мышцы, которые вы&nbsp;клеите прямо на&nbsp;кожу!</h2></div>
+          </div>
+          <div class="row">
+            <ul class="flex-items-lg-between nav nav-tabs nav-tabs_info col-md-16 col-lg-4">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#about" role="tab" aria-controls="about">О Компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#patronage" role="tab" aria-controls="patronage">Меценатство</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping">Доставка и Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dcp" role="tab" aria-controls="dcp">ДЦП</a>
+              </li>
+            </ul>
+            <div class="tab-content col-md-16 col-lg-12">
+              <div class="tab-pane fade show active scrollbar" id="about" role="tabpanel">
+                <p>Постоянно занимаясь спортом, особенно раньше, когда это было на профессиональном уровне, мы, как и все спортсмены, периодически сталкивались с травмами различной степени тяжести. Мы перепробовали множество средств и способов восстановления после травм и только под закат своей профессиональной карьеры, мы узнали о кинезиологических тейпах  и об их чудодейственных свойствах.</p>
+
+                <p>Участвуя в различных международных турнирах, да и просто путешествуя по странам, мы не могли не заметить, что кинезио-тейпы используются повсеместно, не только в спорте, но и в повседневной жизни. В Южной Корее кинезио-тейпы давно продаются в каждом спортивном магазине и в каждой аптеке, и используют их практически все, тейпы стали бытовым стандартом первой помощи, как, например, зеленка или обычный пластырь у нас. В Германии, вслед за известными спортсменами, тейпируются все, так или иначе, занимающиеся любыми видами спорта.</p>
+                <p>Участвуя в различных международных турнирах, да и просто путешествуя по странам, мы не могли не заметить, что кинезио-тейпы используются повсеместно, не только в спорте, но и в повседневной жизни. В Южной Корее кинезио-тейпы давно продаются в каждом спортивном магазине и в каждой аптеке, и используют их практически все, тейпы стали бытовым стандартом первой помощи, как, например, зеленка или обычный пластырь у нас. В Германии, вслед за известными спортсменами, тейпируются все, так или иначе, занимающиеся любыми видами спорта.</p>
+              </div>
+              <div class="tab-pane fade" id="patronage" role="tabpanel">...</div>
+              <div class="tab-pane fade" id="shipping" role="tabpanel">...</div>
+              <div class="tab-pane fade" id="dcp" role="tabpanel">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tabs-content -->
+    </section>
+    <!-- section-bg -->
+    <section class="main-map">
+      <header class="double-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7 col-lg-5">
+              <div class="double-caption__item-dark">
+                Выберите город:
+              </div>
+            </div>
+            <div class="col-sm-9 col-lg-11">
+              <div class="double-caption__item-light">
+                <div class="dropdown">
+                  <a class="dropdown-toggle double-caption__light-title" href="#!" data-toggle="dropdown">
+                  Новосибирск <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <footer class="container-map">
+        <div id="map"></div>
+      </footer>
+    </section>
+    <!-- main-map -->
+  </main>
+  <!--main-->
+  <footer id="footer" class="footer-main">
+    <div class="container">
+      <div class="row flex-items-between">
+        <div class="col-auto col-sm-14 col-md-5 col-lg-4 col-xl-3">
+          <a href="#!" class="logo"><span><img src="images/logo.png" alt=""></span></a>
+        </div>
+        <div class="navbar col-auto col-sm-2 col-md-3 col-lg-8 col-xl-9">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarFooter">
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarFooter">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Информация для клиентов</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Онлайн каталог</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Адреса магазинов</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!"><span>Личный кабинет</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- navbar -->
+        <div class="col-md-8 col-lg-4 text-md-right">
+          <div class="phone-item">8 800 555-16-17</div>
+          <div class="panel-soc">
+            <a href="#!"><i class="icon icon-panel-vk"></i></a>
+            <a href="#!"><i class="icon icon-panel-fb"></i></a>
+          </div>
+          <div class="panel-link">
+            <span class="panel-lang active">rus</span>
+            -
+            <a href="#!" class="panel-lang">eng</a>
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer__left">
+              <div class="row flex-items-middle h-100">
+                <div class="col-md-4 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="col-lg-12 text-lg-right">
+                  <span class="pr-20">Мы работаем с</span>
+                  <img src="images/pay.jpg" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 flex-bottom">
+            <div class="footer__right flex-items-center flex-items-md-right">Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+  <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+  <![endif]-->
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 14
+            });
+
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script> <!-- для горизонтального скролла -->
+  <script src="js/main.js"></script>
+</body>
+</html>

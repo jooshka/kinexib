@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Faq</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div  id="header">
+      //= layout/header.html
+    </div>
+    <div class="header-panel">
+      <div class="container">
+        <h1 class="header-panel__title">FAQ:</h1>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- header-panel -->
+  </header>
+  <main id="main">
+    <div class="container">
+      <div class="box-sort">
+        <span class="pr-10 play">Категория вопросов:</span>
+        <div id="dropdownMenuLink" class="dropdown inline">
+          <a class="dropdown-toggle text-blue play" href="#!" data-toggle="dropdown"><span id="dropdownText">Все вопросы</span></a>
+          <i class="fa fa-angle-down text-blue"></i>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a data-group-link="all" href="#!" class="dropdown-item">Все вопросы</a>
+            <a data-group-link="group-1" href="#!" class="dropdown-item">Плавание</a>
+            <a data-group-link="group-2" href="#!" class="dropdown-item">Прыжки</a>
+            <a data-group-link="group-3" href="#!" class="dropdown-item">Метание</a>
+          </div>
+        </div>
+        <hr class="line mt-20 mb-10" />
+      </div>
+      <!-- faq-sort -->
+      <div id="accordion" class="mb-50" role="tablist" aria-multiselectable="true">
+        <div class="card collapse-faq group-1 all">
+          <div class="card-header" role="tab" id="headingOne">
+            <i class="icon icon-faq"></i>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Можете ли вы построить мне маленький небоскрёб?  Чтобы я мог поселить в нём куклу.
+            </a>
+          </div>
+
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <div class="card-author"><strong>Kinexib</strong><span class="card-author__sep">-</span></div>
+              <p class="card-text">Да уважаемый, скидка обязательно будет! Только вы в таком случае не везите все кирпичи зарание - согласовывайте и привозите только нужное количество материала для текущего этапа строительства. Также будет лучше если перед покупкой кирпича вы согласуете нужную марку и габариты с нами!</p>
+              <div class="card-author"><strong>Лёха Б.</strong><span class="card-author__sep">-</span></div>
+              <p class="card-text">Но я уже купил кирпич и причём на всю стройку вперёд! Может получится, что кирпич не подходит для постройки </p>
+              <div class="card-author"><strong>Kinexib</strong><span class="card-author__sep">-</span></div>
+              <p class="card-text">Мало вероятно, что кирпич не подойдёт. Но могут быть некоторые проблемы при соблюдении проекта.</p>
+              <button type="button" class="btn btn-secondary">Продолжить диалог</button>
+            </div>
+          </div>
+        </div>
+        <div class="card collapse-faq group-2 all">
+          <div class="card-header" role="tab" id="headingTwo">
+              <i class="icon icon-faq"></i>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Если я сам вам привезу свои кирпичи - мне будет скидка при строительстве?
+              </a>
+
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block">
+              <div class="card-author"><strong>Лёха Б.</strong><span class="card-author__sep">-</span></div>
+              <p class="card-text">Но я уже купил кирпич и причём на всю стройку вперёд! Может получится, что кирпич не подходит для постройки </p>
+            </div>
+          </div>
+        </div>
+        <div class="card collapse-faq group-3 all">
+          <div class="card-header" role="tab" id="headingThree">
+              <i class="icon icon-faq"></i>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                У меня на даче крыша потекла! Скажите сколько мне будет стоить ремонт?
+              </a>
+
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-block">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- accordion -->
+      <div class="row flex-items-middle mb-50">
+        <div class="col-md-7 col-lg-5 col-xl-4 mb-10">
+          <button data-target="#question" data-toggle="modal" type="button" class="btn btn-primary btn-block">Задать новый вопрос</button>
+        </div>
+        <div class="col-auto col fz28 text-light hidden-sm-down mb-10"><i class="fa fa-angle-double-left"></i></div>
+        <div class="col-md-8 col-lg-10 col-xl-11 fz14 mb-10">
+          Пожалуйста ознакомтесь с уже имеющимися ответами прежде чем задавать новый вопрос! Повторяющиеся вопросы будут удаляться модератором.
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+  </main>
+  <!--main-->
+  <footer id="footer">
+    //= layout/footer.html
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelQuestion" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelQuestion">Задать вопрос</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-10 row flex-items-middle">
+            <label class="col-sm-4">ваше имя:</label>
+            <div class="col-sm-12">
+              <div class="box-control">
+                <input class="form-control" type="text" placeholder="Например Николай" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-10 row">
+            <label class="col-sm-4">категирия:</label>
+            <div class="col-sm-12">
+              <select class="custom-select">
+                <option>Плавание</option>
+                <option>Прыжки</option>
+                <option>Метание</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-10 row">
+            <label class="col-sm-4">вопрос:</label>
+            <div class="col-sm-12">
+              <textarea rows="4" class="form-control" placeholder="тексе вопроса" ></textarea>
+              <button type="button" class="btn btn-primary mt-10">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+  <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

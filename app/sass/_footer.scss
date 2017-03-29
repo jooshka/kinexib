@@ -1,0 +1,128 @@
+#footer {
+  position: relative;
+  .navbar {
+    margin-top: -1rem;
+    .navbar-collapse {
+      top: auto;
+      bottom: 100%;
+      margin-bottom: -1rem;
+    }
+  }
+  .logo {
+    height: 100%;
+  }
+  .phone-item {
+    margin: 0;
+  }
+  .navbar-toggler {
+    margin-top: 1rem;
+  }
+}
+.footer-main {
+  background-color: #0b0b0b;
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: '';
+    background: transparent url('../images/footer.png') left top no-repeat;
+    height: 68px;
+    top: -49px;
+  }
+}
+.footer-light {
+  background:#e8e8e8;
+}
+.footer-panel {
+  background: #e8e8e8;
+  min-height: 150px;
+  position: relative;
+  &::before {
+    background: url('../images/footer-light.png') left top no-repeat;
+    content: "";
+    position: absolute;
+    height: 82px;
+    top: -55px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+.fon-right {
+  &::before {
+    background-position: -500% 0;
+  }
+}
+.footer {
+  background-color: #000;
+  font-size: calculateRem(12px);
+  position: relative;
+  text-align: center;
+}
+.footer__left {
+  background-color: #000;
+  padding: 1rem 0 0 0;
+  position: relative;
+}
+.footer__right {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  height: calculateRem(42px);
+}
+
+@media (min-width: $grid-md-up) {
+  .footer {
+    background: none;
+    text-align: left;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background-color: #000;
+    }
+    &::before {
+      left: 0;
+      width: 50%;
+      height: calculateRem(70px);
+    }
+    &::after {
+      width: 25%;
+      right: 0;
+      height: calculateRem(42px);
+    }
+  }
+  .footer__left {
+    height: calculateRem(70px);
+    padding: 0 4.5rem 0 0;
+    background: linear-gradient(-45deg, rgba(0,0,0,0) calculateRem(54px), #000 0);
+    &::after {
+      position: absolute;
+      width: 10px;
+      height: 100%;
+      content: '';
+      transform: skewX(-45deg);
+      background-color: #000;
+      right: calculateRem(20px);
+      top: 0;
+    }
+  }
+  .footer__right {
+    &::before {
+      content: "";
+      top: 0;
+      width: 65px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      transform: translateX(-65%) skewX(-45deg);
+      background-color: #000;
+      z-index: -1;
+    }
+  }
+  .footer__shell {
+
+  }
+}

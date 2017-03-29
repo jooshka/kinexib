@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div  id="header">
+      //= layout/header.html
+    </div>
+    <div class="header-panel">
+      <div class="container">
+        <div class="row flex-items-between">
+          <div class="col-auto col">
+            <h1 class="header-panel__title">Наша продукция:</h1>
+          </div>
+          <div class="col-auto col">
+            <div class="header-panel__sorting">
+              <span>Сортировать по:</span>
+               <div id="dropdownMenuLink" class="dropdown dropdown-custom">
+                  <a class="dropdown-toggle" href="#!" data-toggle="dropdown"><span id="dropdownText">Выбрать</span></a>
+                  <i class="fa fa-angle-down"></i>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">Стоимости</a>
+                    <a href="#!" class="dropdown-item">Цена</a>
+                    <a href="#!" class="dropdown-item">Названию</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- header-panel -->
+  </header>
+  <main id="main">
+  <div class="container mb-100">
+    <div class="row">
+      <aside class="col-md-5 col-lg-4 col-xl-3">
+        <div class="aside-box">
+          <div class="aside-title">Виды нагрузок</div>
+          <label class="custom-control custom-radio">
+            <input id="radio1" name="radio" type="radio" class="custom-control-input" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Все виды нагрузок</span>
+          </label>
+          <label class="custom-control custom-radio">
+            <input id="radio2" name="radio" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Всем (классические)</span>
+          </label>
+          <label class="custom-control custom-radio">
+            <input id="radio2" name="radio" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Экстримальные</span>
+          </label>
+        </div>
+        <div class="aside-box">
+          <div class="aside-title">Характиристики</div>
+          <a href="#!" class="link-rating">
+            <span class="arrow"></span><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </a>
+          <a href="#!" class="link-rating">
+            <span class="arrow"></span><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star"></i>
+          </a>
+          <a href="#!" class="link-rating">
+            <span class="arrow"></span><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </a>
+          <a href="#!" class="link-rating">
+            <span class="arrow"></span><i class="fa fa-star full"></i><i class="fa fa-star full"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </a>
+        </div>
+        <div class="aside-box">
+          <div class="aside-title">Ценовой диапазон</div>
+          <div class="slider-range">
+            <span class="pl-15 pull-left" id="lower-value-price"></span> - <span class="pr-15 pull-right" id="upper-value-price"></span>
+            <div id="price"></div>
+          </div>
+          <div class="slider-currency">руб.</div>
+        </div>
+        <div class="aside-box">
+          <div class="aside-title">Длинна тейпа</div>
+          <div class="slider-range">
+            <span class="pl-15 pull-left" id="lower-value-tape"></span> - <span class="pr-15 pull-right" id="upper-value-tape"></span>
+            <div id="tape"></div>
+          </div>
+          <div class="slider-currency">м.</div>
+        </div>
+        <div class="aside-box">
+          <div class="aside-title">Расцветка</div>
+            <div>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked />
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Черный</span>
+              </label>
+            </div>
+            <div>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input"/>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">белый</span>
+              </label>
+            </div>
+            <div>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input"/>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">синий</span>
+              </label>
+            </div>
+        </div>
+        <div class="filter-reset">
+          <i class="icon icon-reset"></i><span class="pl-15">Сбросить фильтр</span>
+        </div>
+      </aside>
+      <div class="col-md-11 col-lg-12 col-xl-13">
+        <div class="catalog row flex-items-right">
+          //= layout/catalog.html
+        </div>
+        <!-- catalog -->
+        <a href="#!" class="mt-10 more-items">
+          <i class="fa fa-angle-down"></i> Показать ещё 20 товаров
+        </a>
+      </div>
+      <!-- col -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+  <div class="footer-panel"></div>
+  </main>
+  <!--main-->
+  <footer id="footer" class="footer-light">
+    //= layout/footer.html
+  </footer>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+  <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/nouislider.min.js"></script> <!-- для диапозона цен -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

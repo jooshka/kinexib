@@ -1,0 +1,17 @@
+/* Contextual backgrounds */
+
+@include bg-variant('.bg-black', $black);
+
+@include bg-variant('.bg-blue', $blue);
+
+@include bg-variant('.bg-pink', $pink);
+
+@include bg-variant('.bg-orange', $orange);
+
+@include bg-variant('.bg-green', $green);
+
+@include bg-variant('.bg-white', $white);
+
+@include bg-variant('.bg-brown', $brown);
+
+@include bg-variant('.bg-red', $red);

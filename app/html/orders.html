@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Ваши заказы</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div  id="header">
+      //= layout/header.html
+    </div>
+    <div class="header-panel">
+      <div class="container">
+        <div class="row flex-items-meddle">
+          <div class="col col-auto"><h1 class="header-panel__title">Личный кабинет</h1></div>
+          <div class="col col-auto offset-md-1 mb-30">
+            <a class="head-link" href="#!">
+              <span class="pr-10"><i class="icon icon-info"></i></span>
+              <span class="head-link-txt">Ваши контактные данные</span>
+            </a>
+          </div>
+          <div class="col col-auto offset-lg-1 mb-30">
+            <a class="head-link active" href="#!">
+              <span class="pr-10"><i class="icon icon-list"></i></span>
+              <span class="head-link-txt">Ваши заказы<span class="header-arrow"></span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- header-panel -->
+  </header>
+  <main id="main">
+    <section class="container mb-10">
+      <div class="sortable-block clearfix">
+        <span class="pr-10">Сортировать заказы по:</span>
+        <div id="dropdownMenuLink" class="dropdown inline float-right float-sm-none">
+          <a class="dropdown-toggle text-blue" href="#!" data-toggle="dropdown"><span id="dropdownText">Выбрать</span></a>
+          <i class="fa fa-angle-down text-blue"></i>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a href="#!" class="dropdown-item">Дате</a>
+            <a href="#!" class="dropdown-item">Цене</a>
+            <a href="#!" class="dropdown-item">Названию</a>
+          </div>
+        </div>
+      </div>
+      <!-- sortable-block -->
+      <hr class="line mb-20 mt-10" />
+      <div class="row">
+        <div class="col-lg-5 mb-20">
+          <div class="row mb-10">
+            <div class="col-8 text-light">Номер заказа:</div>
+            <div class="col-8">№ 4519</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ доставки:</div>
+            <div class="col-8">Не выбран</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ оплаты:</div>
+            <div class="col-8">Не выбран</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-30 mt-20">
+            <div class="col-lg-13"><button class="btn btn-primary btn-block"> Заказать повторно</button></div>
+          </div>
+        </div>
+        <!-- col -->
+        <div class="col-lg-11">
+          <span class="text-red col">На этапе формирования корзины</span>
+          <span class="text-light col">с 07.05.2015</span>
+          <hr class="line mt-10" />
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <div class="order-total">
+            <div class="row text-center">
+              <div class="col-8 col-sm-3 offset-sm-10"><strong class="fz20">Итого:</strong></div>
+              <div class="col-8 col-sm-3"><strong><span class="fz20">11 187</span> р.</strong></div>
+            </div>
+          </div>
+          <!-- order-total -->
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+      <hr class="line mb-15" />
+      <div class="row">
+        <div class="col-lg-5 mb-20">
+          <div class="row mb-10">
+            <div class="col-8 text-light">Номер заказа:</div>
+            <div class="col-8">№ 4519</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ доставки:</div>
+            <div class="col-8">Почта России</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ оплаты:</div>
+            <div class="col-8">Visa \ MasterCard</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-30 mt-20">
+            <div class="col-lg-13"><button class="btn btn-primary btn-block"> Заказать повторно</button></div>
+          </div>
+        </div>
+        <!-- col -->
+        <div class="col-lg-11">
+          <span class="text-red col">На этапе доставки</span>
+          <span class="text-light col">с 07.05.2015</span>
+          <hr class="line mt-10" />
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <div class="order-total">
+            <div class="row text-center">
+              <div class="col-8 col-sm-3 offset-sm-10"><strong class="fz20">Итого:</strong></div>
+              <div class="col-8 col-sm-3"><strong><span class="fz20">11 187</span> р.</strong></div>
+            </div>
+          </div>
+          <!-- order-total -->
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+      <hr class="line mb-15" />
+      <div class="row">
+        <div class="col-lg-5 mb-20">
+          <div class="row mb-10">
+            <div class="col-8 text-light">Номер заказа:</div>
+            <div class="col-8">№ 4519</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ доставки:</div>
+            <div class="col-8">Самовывоз</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-10">
+            <div class="col-8 text-light">Способ оплаты:</div>
+            <div class="col-8">Яндекс Деньги</div>
+          </div>
+          <!-- row -->
+          <div class="row mb-30 mt-20">
+            <div class="col-lg-13"><button class="btn btn-primary btn-block"> Заказать повторно</button></div>
+          </div>
+        </div>
+        <!-- col -->
+        <div class="col-lg-11">
+          <span class="text-red col">Выполнен</span>
+          <span class="text-light col">с 07.05.2015</span>
+          <hr class="line mt-10" />
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <a href="#!" class="order-item">
+            <div class="row flex-items-middle">
+              <div class="col-sm-10">
+                <div class="fz14 col text-center text-sm-left">
+                  <strong class="pr-10">Тейп сверхэластичный</strong> <span class="text-light">(красный)</span>
+                  <div class="fz12">артикул 1891665168</div>
+                </div>
+              </div>
+              <!-- col -->
+              <div class="col-16 hidden-sm-up"><hr class="line mt-5 mb-5" /></div>
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12"><strong class="fz14">5</strong> шт. по</div>
+                <div class="fz12"><strong class="fz14">320</strong> р.</div>
+              </div>
+              <!-- col -->
+              <div class="col-8 col-sm-3 text-center">
+                <div class="fz12">на сумму</div>
+                <div class="fz12"><strong class="fz14">1 600</strong> р.</div>
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </a>
+          <!-- order-item -->
+          <div class="order-total">
+            <div class="row text-center">
+              <div class="col-8 col-sm-3 offset-sm-10"><strong class="fz20">Итого:</strong></div>
+              <div class="col-8 col-sm-3"><strong><span class="fz20">11 187</span> р.</strong></div>
+            </div>
+          </div>
+          <!-- order-total -->
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </section>
+    <!-- container -->
+  </main>
+  <!--main-->
+  <footer id="footer">
+    //= layout/footer.html
+  </footer>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+  <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

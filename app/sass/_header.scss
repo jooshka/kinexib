@@ -1,0 +1,127 @@
+#header {
+  background-color: rgba(0,0,0,0.9);
+  position: relative;
+  z-index: 11;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 calculateRem(30px);
+  margin: 0 0 0 calculateRem(-30px);
+  height: 115%;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    clip-path: polygon(100% 0, 64% 100%, 0% 100%, 0 20%, 8% 0);
+    background-color: #000;
+  }
+}
+.phone-item {
+  @extend .play;
+  color: $red;
+  line-height: 1;
+  font-size: calculateRem(22px);
+  margin: calculateRem(20px) 0 0;
+}
+.panel-link {
+  text-transform: uppercase;
+  font-size: calculateRem(15px);
+  color: $gray-light;
+  float: right;
+  margin: calculateRem(18px) calculateRem(30px) calculateRem(25px) 0;
+}
+.panel-lang {
+  padding: 0 calculateRem(5px);
+}
+.panel-soc {
+  margin-left: 1px;
+  float: right;
+  margin: calculateRem(15px) 0 calculateRem(25px);
+  a {
+    float: left;
+    margin-left: 1px;
+    &:hover {
+      filter: contrast(1.5);
+    }
+  }
+}
+.page-header {
+  background:url('../images/header.jpg') left top no-repeat;
+  color: $white;
+  position: relative;
+  &::after {
+    background:url('../images/header.png') left bottom no-repeat;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 48px;
+    width: 100%;
+  }
+  @media (max-width: 1600px) {
+    margin-bottom: 2rem;
+  }
+}
+.header-panel {
+  padding: 2.8rem 0 48px 0;
+}
+.header-panel__title {
+  font-size: calculateRem(24px);
+  margin: 0 0 2rem;
+}
+.header-panel__link {
+  color: $white;
+  text-decoration: none;
+}
+.header-panel__sorting {
+  margin-bottom: 2rem;
+  .dropdown {
+    display: inline-block;
+  }
+}
+@media (max-width: $grid-xl-down) {
+  .logo {
+    img {
+      max-width: 70%;
+    }
+  }
+}
+@media (max-width: $grid-md-down) {
+  .logo {
+    height: 100%;
+    padding-top: calculateRem(20px);
+    padding-bottom: calculateRem(20px);
+  }
+  .navbar-collapse {
+    right: 0;
+  }
+  .phone-item {
+    float: left;
+  }
+}
+@media (min-width: $grid-sm-up) {
+  #header {
+    background-color: rgba(0,0,0,0.7);
+    &.position {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .header-panel__sorting {
+    text-align: right;
+  }
+}
+@media (min-width: $grid-lg-up) {
+  #header {
+    background-color: rgba(0,0,0,0.5);
+  }
+}
