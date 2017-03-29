@@ -5,7 +5,7 @@ import _     from 'lodash'
 Vue.use(Vuex)
 
 // удалить, когда через апи будет сделано
-import {_cities, _shops_3, _shops_24, _shops_5} from './temp_data'
+import {_cities, _shops_3, _shops_24, _shops_5} from '../temp_data'
 
 export const store = new Vuex.Store({
   debug: true,

@@ -4,12 +4,13 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
   entry: {
-    map_app_libs: [
+    vue_libs: [
       'vue',
       'vuex',
       'lodash'
     ],
-    map_app: './app/vue/map.es6'
+    app_map: './app/vue/map.es6',
+    app_index: './app/vue/index.es6'
   },
   output: {
     path: __dirname + '/app/js',
@@ -41,7 +42,7 @@ module.exports = {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'map_app_libs',
+      name: 'vue_libs',
       minChunks: Infinity
     }),
     new webpack.optimize.UglifyJsPlugin({
