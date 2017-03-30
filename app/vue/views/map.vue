@@ -47,7 +47,6 @@
 
 <script>
 
-  //import aHeader     from '../components/common/header.vue'
   import cityList    from '../components/map/city_list.vue'
   import countryMap  from '../components/map/country_map.vue'
   import cityMap     from '../components/map/city_map.vue'
@@ -74,7 +73,6 @@
     },
 
     components: {
-    //  aHeader,
       cityList,
       countryMap,
       cityMap,
