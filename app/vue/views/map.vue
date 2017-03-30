@@ -2,7 +2,6 @@
   <div>
 
     <header class="page-header page-header_map">
-      <a-header></a-header>
       <div class="header-panel">
         <div class="container">
           <h1 class="header-panel__title mb-15">Адреса магазинов. Выберите нужный город.</h1>
@@ -48,7 +47,7 @@
 
 <script>
 
-  import aHeader     from '../components/common/header.vue'
+  //import aHeader     from '../components/common/header.vue'
   import cityList    from '../components/map/city_list.vue'
   import countryMap  from '../components/map/country_map.vue'
   import cityMap     from '../components/map/city_map.vue'
@@ -75,7 +74,7 @@
     },
 
     components: {
-      aHeader,
+    //  aHeader,
       cityList,
       countryMap,
       cityMap,
